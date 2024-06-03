@@ -97,6 +97,21 @@
   services = {
     printing.enable = true;
     
+    auto-cpufreq = {
+      enable = true;
+      settings = {
+        battery = {
+          governor = "ondemand";
+          turbo = "off";
+        };
+        
+        charger = {
+          governor = "ondemand";
+          turbo = "auto";
+        };
+      };
+    };
+    
     displayManager.autoLogin = {
       enable = true;
       user = "robert";

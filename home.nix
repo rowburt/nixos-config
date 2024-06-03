@@ -38,12 +38,9 @@
       
       # Desktop apps
       deja-dup
+      discord
       firefox
       mission-center
-      
-      # Gaming
-      discord
-      steam
       
       # Jetbrains IDEs
       jetbrains.pycharm-professional
