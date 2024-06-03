@@ -68,17 +68,19 @@
   
   security.polkit.enable = true;
   security.rtkit.enable = true;
+  nixpkgs.config.allowUnfree = true;
   sound.enable = true;
   
-  # Allow experimental features and non-free packages
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nixpkgs.config.allowUnfree = true;
-  
-  # Periodically delete old generations
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 30d";
+  # Automatically clean up nix and enable experimental features
+  nix = {
+    optimise.automatic = true;
+    settings.experimental-features = [ "nix-command" "flakes" ];
+    
+    gc = {
+      automatic = true;
+      dates = "daily";
+      options = "--delete-older-than 7d";
+    };
   };
   
   # Configure user account
