@@ -28,7 +28,6 @@
       gnupg
       htop
       lm_sensors
-      pinentry
       
       # Useful GNOME packages
       gnome.gnome-disk-utility
@@ -43,10 +42,10 @@
       mission-center
       
       # Jetbrains IDEs
+      # Rider is installed as a flatpak because of MSBuild issues
       jetbrains.pycharm-professional
       jetbrains.idea-ultimate
       jetbrains.clion
-      jetbrains.rider
       
       # Other IDEs
       arduino

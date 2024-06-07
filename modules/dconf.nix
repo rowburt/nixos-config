@@ -71,7 +71,7 @@
           "idea-ultimate.desktop"
           "pycharm-professional.desktop"
           "clion.desktop"
-          "rider.desktop"
+          "com.jetbrains.Rider.desktop"
         ];
       };
             

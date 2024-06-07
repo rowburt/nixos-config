@@ -24,7 +24,6 @@
         
         # { key = "ArrowLeft"; mods = "Shift"; action = "SelectLastTab"; };
         
-        { key = "L"; mods = "Control"; action = "ClearLogNotice"; }
         { key = "F11"; action = "ToggleMaximized"; }
       ];
     };

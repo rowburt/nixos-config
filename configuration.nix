@@ -97,6 +97,7 @@
   
   # Configure useful services
   services = {
+    ollama.enable = true;
     printing.enable = true;
     
     auto-cpufreq = {
