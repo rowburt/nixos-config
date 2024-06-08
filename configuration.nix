@@ -5,11 +5,17 @@
     # Include results of the hardware scan
     ./hardware-configuration.nix
     
+    # Include disko disk configuration
+    ./disk-config.nix
+
     # Include GNOME desktop environment
     ./gnome.nix
     
     # Include flatpak and packages
     ./flatpak.nix
+
+    # Include nixvim configuration
+    ./nixvim.nix
   ];
   
   # Enable bootloader, disko will manage our boot and encrypted partitions for us

@@ -16,7 +16,7 @@
     
     # Set default apps
     sessionVariables = {
-      # TODO: EDITOR = "nvim";
+      EDITOR = "nvim";
       BROWSER = "firefox";
       TERMINAL = "alacritty";
     };
@@ -54,3 +54,4 @@
     ];
   };
 }
+
