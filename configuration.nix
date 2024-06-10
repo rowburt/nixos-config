@@ -105,6 +105,9 @@
   services = {
     ollama.enable = true;
     printing.enable = true;
+
+    # Disable because we are using auto-cpufreq
+    power-profiles-daemon.enable = false;
     
     auto-cpufreq = {
       enable = true;

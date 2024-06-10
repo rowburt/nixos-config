@@ -21,9 +21,7 @@
         { key = "ArrowDown"; mods = "Control"; action = "ScrollHalfPageDown"; }
         { key = "PageUp"; action = "ScrollToTop"; }
         { key = "PageDown"; action = "ScrollToBottom"; }
-        
-        # { key = "ArrowLeft"; mods = "Shift"; action = "SelectLastTab"; };
-        
+         
         { key = "F11"; action = "ToggleMaximized"; }
       ];
     };
