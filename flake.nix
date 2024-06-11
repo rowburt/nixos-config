@@ -21,18 +21,18 @@
     };
   };
   
-  outputs = { self, disko, home-manager, nixpkgs, nixvim, nix-flatpak, ... }@inputs:
+  outputs = { nixpkgs, ... }@inputs:
   {
     nixosConfigurations.envy = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs.inputs = inputs;
       
       modules = [
-        disko.nixosModules.disko
-        nix-flatpak.nixosModules.nix-flatpak
-        nixvim.nixosModules.nixvim
+        inputs.disko.nixosModules.disko
+        inputs.nix-flatpak.nixosModules.nix-flatpak
+        inputs.nixvim.nixosModules.nixvim
 	
-        home-manager.nixosModules.home-manager
+        inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
