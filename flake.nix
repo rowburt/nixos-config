@@ -2,7 +2,7 @@
   description = "My NixOS system configuration";
   
   inputs = {
-    nixpkgs.url = "nixpkgs/release-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
 
     disko = {
@@ -11,13 +11,16 @@
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-24.05";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/nixvim";
+
+      # Commented out to fix nixvim issue
+      # https://github.com/NixOS/nixpkgs/pull/291040#issuecomment-2156604610
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
   };
   
