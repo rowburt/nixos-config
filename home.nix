@@ -27,6 +27,7 @@
       curl
       gnupg
       htop
+      jq
       lm_sensors
       
       # Useful GNOME packages

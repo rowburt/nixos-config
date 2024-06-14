@@ -1,7 +1,7 @@
 # NixOS-config
 
 My NixOS configuration files containing:
-- A minimal GNOME desktop environment.
+- GNOME desktop environment.
 - [Declarative flatpaks](https://github.com/gmodena/nix-flatpak) for installing useful applications.
 - [Disko](https://github.com/nix-community/disko) disk layout for Btrfs with subvolumes in a LUKS partition.
 - [Flakes](https://nixos.wiki/wiki/flakes) for a reproducible build of the system.
