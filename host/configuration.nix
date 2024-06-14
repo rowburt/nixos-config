@@ -8,14 +8,8 @@
     # Include disko disk configuration
     ./disk-config.nix
 
-    # Include GNOME desktop environment
-    ./gnome.nix
-    
-    # Include flatpak and packages
-    ./flatpak.nix
-
-    # Include nixvim configuration
-    ./nixvim.nix
+    # Include system modules
+    ./modules
   ];
   
   # Enable bootloader, disko will manage our boot and encrypted partitions for us

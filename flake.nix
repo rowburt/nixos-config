@@ -34,15 +34,15 @@
         inputs.disko.nixosModules.disko
         inputs.nix-flatpak.nixosModules.nix-flatpak
         inputs.nixvim.nixosModules.nixvim
-	
+
+        ./host/configuration.nix
+
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.robert = import ./home.nix;
         }
-        
-        ./configuration.nix
       ];
     };
   };

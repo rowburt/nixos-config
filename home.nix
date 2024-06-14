@@ -1,13 +1,7 @@
 { pkgs, ... }:
 
 {
-  # Import modules we want to install
-  imports = [
-    ./modules/alacritty.nix
-    ./modules/dconf.nix
-    ./modules/git.nix
-    ./modules/zsh.nix
-  ];
+  imports = [ ./programs ];
   
   home = {
     username = "robert";
