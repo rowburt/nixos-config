@@ -56,7 +56,7 @@
   
   # Configure hardware
   hardware = {
-    opengl.enable = true;
+    graphics.enable = true;
     pulseaudio.enable = false;
     
     bluetooth = {
