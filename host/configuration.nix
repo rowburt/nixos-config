@@ -66,8 +66,12 @@
     };
   };
   
-  security.polkit.enable = true;
-  security.rtkit.enable = true;
+  security = {
+    apparmor.enable = true;
+    polkit.enable = true;
+    rtkit.enable = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
   sound.enable = true;
   
@@ -98,7 +102,11 @@
   # Configure useful services
   services = {
     ollama.enable = true;
-    printing.enable = true;
+
+    printing = {
+      enable = true;
+      drivers = [ pkgs.hplip ];
+    };
 
     # Disable because we are using auto-cpufreq
     power-profiles-daemon.enable = false;
