@@ -12,7 +12,6 @@
 
       keyboard.bindings = [
         { key = "T"; mods = "Control"; action = "CreateNewWindow"; }
-        { key = "W"; mods = "Control"; action = "Quit"; }
         
         { key = "C"; mods = "Control|Shift"; action = "Copy"; }
         { key = "V"; mods = "Control|Shift"; action = "Paste"; }
