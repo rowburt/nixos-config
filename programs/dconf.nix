@@ -1,19 +1,21 @@
-{ ... }:
+{ lib, ... }:
 
 {
   dconf = {
     enable = true;
     
     settings = {
-      "org/gnome/desktop/remote-desktop/rdp".enable = false;
-      "org/gnome/shell/extensions/caffeine".enable-fullscreen = false;
       "org/gnome/shell/app-switcher".current-workspace-only = true;
       "org/gnome/desktop/datetime".automatic-timezone = true;
+      "org/gnome/desktop/remote-desktop/rdp".enable = false;
       "org/gnome/desktop/calendar".show-weekdate = true;
-      "org/gnome/desktop/session".idle-delay = 300;
       "org/gnome/desktop/sound".event-sounds = false;
+
+      "org/gnome/settings-daemon/plugins/power".sleep-inactive-ac-type = "nothing";
+      "org/gnome/desktop/session".idle-delay = (lib.hm.gvariant.mkUint32 900);
       
-      "org/gnome/shell/extensions/blur-my-shell".settings-version=2;
+      "org/gnome/shell/extensions/caffeine".enable-fullscreen = false;
+      "org/gnome/shell/extensions/blur-my-shell".settings-version = 2;
       
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
