@@ -25,10 +25,10 @@
       lm_sensors
       
       # Useful GNOME packages
-      gnome.gnome-disk-utility
+      gnome-disk-utility
       gnome.gnome-software
-      gnome.gnome-tweaks
-      gnome.nautilus
+      gnome-tweaks
+      nautilus
       
       # Desktop apps
       deja-dup
@@ -46,6 +46,7 @@
       arduino
       godot_4
       rstudio
+      zed-editor
     ];
   };
 }
