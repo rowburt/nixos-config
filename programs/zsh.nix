@@ -7,7 +7,7 @@
     syntaxHighlighting.enable = true;
     
     shellAliases = {
-      rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#envy";
+      rebuild = "sudo nixos-rebuild switch --flake /etc/nixos";
       update = "sudo nix flake update /etc/nixos && rebuild";
     };
     

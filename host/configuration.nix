@@ -72,7 +72,6 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-  sound.enable = true;
   
   # Automatically clean up nix and enable experimental features
   nix = {
