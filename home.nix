@@ -23,10 +23,12 @@
       htop
       jq
       lm_sensors
-      
+      ripgrep
+
       # Useful GNOME packages
-      gnome-disk-utility
       gnome.gnome-software
+      gnome-disk-utility
+      gnome-system-monitor
       gnome-tweaks
       nautilus
       
@@ -34,7 +36,6 @@
       deja-dup
       discord
       firefox
-      mission-center
       
       # Jetbrains IDEs
       # Rider is installed as a flatpak because of MSBuild issues
