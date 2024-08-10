@@ -14,9 +14,10 @@
   
   # Enable bootloader, disko will manage our boot and encrypted partitions for us
   boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
     initrd.kernelModules = [ "amdgpu" ];
     supportedFilesystems = [ "btrfs" ];
-    
+
     loader = {
       efi.canTouchEfiVariables = true;
 
