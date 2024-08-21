@@ -15,7 +15,6 @@
   # Enable bootloader, disko will manage our boot and encrypted partitions for us
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
-    initrd.kernelModules = [ "amdgpu" ];
     supportedFilesystems = [ "btrfs" ];
 
     loader = {
@@ -24,6 +23,7 @@
       systemd-boot = {
         enable = true;
         editor = false;
+        memtest86.enable = true;
       };
     };
   };
@@ -71,8 +71,6 @@
     polkit.enable = true;
     rtkit.enable = true;
   };
-
-  nixpkgs.config.allowUnfree = true;
   
   # Automatically clean up nix and enable experimental features
   nix = {
@@ -82,7 +80,7 @@
     gc = {
       automatic = true;
       dates = "daily";
-      options = "--delete-older-than 7d";
+      options = "--delete-older-than 21d";
     };
   };
   

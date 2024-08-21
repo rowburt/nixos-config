@@ -17,18 +17,22 @@
 
     nixvim = {
       url = "github:nix-community/nixvim";
-
-      # Commented out to fix nixvim issue
-      # https://github.com/NixOS/nixpkgs/pull/291040#issuecomment-2156604610
-      # inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
   
   outputs = { nixpkgs, ... }@inputs:
+  let
+    pkgs = import nixpkgs {
+      system = "x86_64-linux";
+      config.allowUnfree = true;
+    };
+  in
   {
     nixosConfigurations.envy = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs.inputs = inputs;
+      specialArgs = {
+        inherit inputs pkgs;
+      };
       
       modules = [
         inputs.disko.nixosModules.disko
