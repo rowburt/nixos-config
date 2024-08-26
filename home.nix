@@ -26,8 +26,8 @@
       ripgrep
 
       # Useful GNOME packages
-      gnome.gnome-software
       gnome-disk-utility
+      gnome-software
       gnome-system-monitor
       gnome-tweaks
       nautilus
