@@ -46,8 +46,11 @@
       # Other IDEs
       arduino
       godot_4
-      rstudio
       zed-editor
+
+      # RStudio
+      rstudio
+      libxml2.dev
     ];
   };
 }
