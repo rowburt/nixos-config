@@ -18,6 +18,7 @@
     # Install generic user packages
     packages = with pkgs; [
       # Terminal utils
+      btop
       curl
       gnupg
       htop
