@@ -47,7 +47,6 @@
       # Other IDEs
       arduino
       godot_4
-      zed-editor
 
       # RStudio
       rstudio
