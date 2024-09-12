@@ -98,8 +98,6 @@
   
   # Configure useful services
   services = {
-    ollama.enable = true;
-
     printing = {
       enable = true;
       drivers = [ pkgs.hplip ];

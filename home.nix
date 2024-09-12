@@ -34,6 +34,7 @@
       nautilus
       
       # Desktop apps
+      alpaca
       deja-dup
       discord
       firefox
