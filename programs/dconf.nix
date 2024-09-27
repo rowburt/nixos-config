@@ -6,6 +6,7 @@
     
     settings = {
       "org/gnome/shell/app-switcher".current-workspace-only = true;
+      "org/gnome/desktop/ally/interface".show-status-shapes = true;
       "org/gnome/desktop/datetime".automatic-timezone = true;
       "org/gnome/desktop/remote-desktop/rdp".enable = false;
       "org/gnome/desktop/calendar".show-weekdate = true;
@@ -69,7 +70,7 @@
         ];
         
         favorite-apps = [
-          "firefox.desktop"
+          "floorp.desktop"
           "idea-ultimate.desktop"
           "pycharm-professional.desktop"
           "clion.desktop"
