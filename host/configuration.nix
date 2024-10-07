@@ -58,6 +58,9 @@
   hardware = {
     graphics.enable = true;
     pulseaudio.enable = false;
+
+    # Required for steam
+    graphics.enable32Bit = true;
     
     bluetooth = {
       enable = true;
