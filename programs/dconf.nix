@@ -126,6 +126,11 @@
         show-trash = false;
         transparency-mode = "FIXED";
       };
+
+      "org/gnome/shell/extensions/mediacontrols" = {
+        extension-index = (lib.hm.gvariant.mkUint32 1);
+        extension-position = "Left";
+      };
     };
   };
 }
