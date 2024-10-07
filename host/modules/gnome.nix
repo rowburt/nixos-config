@@ -17,6 +17,7 @@
     blur-my-shell
     caffeine
     dash-to-dock
+    media-controls
     pip-on-top
   ];
   
