@@ -61,6 +61,11 @@
 
     # Required for steam
     graphics.enable32Bit = true;
+
+    # Enable OpenCL support on AMD hardware
+    graphics.extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+    ];
     
     bluetooth = {
       enable = true;
