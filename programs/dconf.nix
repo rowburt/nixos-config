@@ -73,8 +73,9 @@
         favorite-apps = [
           "floorp.desktop"
           "idea-ultimate.desktop"
-          "pycharm-professional.desktop"
           "clion.desktop"
+          "rust-rover.desktop"
+          "pycharm-professional.desktop"
           "com.jetbrains.Rider.desktop"
         ];
       };

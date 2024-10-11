@@ -29,14 +29,16 @@
       deja-dup
       discord
       floorp
-      steam
 
       # Jetbrains IDEs
-      # Rider is installed as a flatpak because of MSBuild issues
+      jetbrains.clion
+      jetbrains.idea-ultimate
       jetbrains.pycharm-professional
       python3
-      jetbrains.idea-ultimate
-      jetbrains.clion
+      # Rider is installed as a flatpak because of MSBuild issues
+      jetbrains.rust-rover
+      rustc
+      cargo
 
       # Other IDEs
       arduino
