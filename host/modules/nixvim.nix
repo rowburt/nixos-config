@@ -84,11 +84,34 @@
       treesitter.enable = true;
       undotree.enable = true;
 
+      cmp = {
+        # TODO: Fix
+        enable = true;
+
+        settings = {
+          mapping = {
+            "<C-Space>" = "cmp.mapping.complete()";
+            "<CR>" = "cmp.mapping.confirm({ select = true })";
+            "<Esc>" = "cmp.mapping.abort()";
+          };
+        };
+      };
+
       telescope = {
         enable = true;
 
         keymaps = {
+          "<A-f>" = {
+            action = "live_grep";
+            options.desc = "Project-wide search";
+          };
+
           "<A-t>" = {
+            action = "buffers";
+            options.desc = "Open recent files finder";
+          };
+
+          "<A-p>" = {
             action = "find_files";
             options.desc = "Open file finder";
           };
@@ -101,19 +124,21 @@
         servers = {
           bashls.enable = true;
           cmake.enable = true;
-          csharp-ls.enable = true;
+          csharp_ls.enable = true;
           cssls.enable = true;
+          dartls.enable = true;
           dockerls.enable = true;
+          gopls.enable = true;
           html.enable = true;
-          java-language-server.enable = true;
+          java_language_server.enable = true;
           jsonls.enable = true;
-          kotlin-language-server.enable = true;
-          lua-ls.enable = true;
+          kotlin_language_server.enable = true;
+          lua_ls.enable = true;
           marksman.enable = true;
           nixd.enable = true;
           sqls.enable = true;
 
-          rust-analyzer = {
+          rust_analyzer = {
             enable = true;
             installCargo = true;
             installRustc = true;
