@@ -71,7 +71,7 @@
         ];
         
         favorite-apps = [
-          "floorp.desktop"
+          "firefox.desktop"
           "idea-ultimate.desktop"
           "clion.desktop"
           "rust-rover.desktop"
