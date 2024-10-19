@@ -28,7 +28,6 @@
       alpaca
       deja-dup
       discord
-      firefox
 
       # Jetbrains IDEs
       jetbrains.clion
