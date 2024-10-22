@@ -31,6 +31,7 @@
 
       # Jetbrains IDEs
       jetbrains.clion
+      gcc
       jetbrains.idea-ultimate
       jetbrains.pycharm-professional
       python3
