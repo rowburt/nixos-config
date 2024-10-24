@@ -8,7 +8,7 @@
     
     shellAliases = {
       rebuild = "sudo nixos-rebuild switch --flake /etc/nixos";
-      update = "sudo nix flake update /etc/nixos && rebuild";
+      update = "sudo nix flake update --flake /etc/nixos && rebuild";
     };
     
     oh-my-zsh = {
