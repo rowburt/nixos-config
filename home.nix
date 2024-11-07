@@ -31,7 +31,7 @@
 
       # Jetbrains IDEs
       jetbrains.clion
-      gcc
+      llvmPackages_19.libcxxClang
       jetbrains.idea-ultimate
       jetbrains.pycharm-professional
       python3
