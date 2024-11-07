@@ -5,6 +5,7 @@
     enable = true;
     
     settings = {
+      "org/gnome/mutter".experimental-features = [ "variable-refresh-rate" ];
       "org/gnome/shell/app-switcher".current-workspace-only = true;
       "org/gnome/desktop/ally/interface".show-status-shapes = true;
       "org/gnome/desktop/datetime".automatic-timezone = true;
