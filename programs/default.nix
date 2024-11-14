@@ -5,7 +5,7 @@
   imports = [
     ./alacritty.nix
     ./dconf.nix
-    ./firefox.nix
+    # ./firefox.nix
     ./git.nix
     ./zsh.nix
   ];

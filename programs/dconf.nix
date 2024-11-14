@@ -72,7 +72,7 @@
         ];
         
         favorite-apps = [
-          "firefox.desktop"
+          "io.github.zen_browser.zen.desktop"
           "idea-ultimate.desktop"
           "clion.desktop"
           "rust-rover.desktop"
