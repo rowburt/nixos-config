@@ -83,11 +83,15 @@
   # Automatically clean up nix and enable experimental features
   nix = {
     optimise.automatic = true;
-    settings.experimental-features = [ "nix-command" "flakes" ];
+
+    settings = {
+      auto-optimise-store = true;
+      experimental-features = [ "nix-command" "flakes" ];
+    };
     
     gc = {
       automatic = true;
-      dates = "daily";
+      dates = "weekly";
       options = "--delete-older-than 21d";
     };
   };
