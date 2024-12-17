@@ -7,7 +7,7 @@
     ./dconf.nix
     # ./firefox.nix
     ./git.nix
-    ./zed.nix
+    ./zed
     ./zsh.nix
   ];
 }
