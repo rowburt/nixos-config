@@ -21,7 +21,13 @@
       gradle
       neocmakelsp
       nixd
-      nil
     ];
+    
+    userSettings = {
+      languages = {
+        # Only use nixd for nix files
+        Nix.language_servers = [ "nixd" "!nil" ];
+      };
+    };
   };
 }
