@@ -28,6 +28,7 @@
       alpaca
       deja-dup
       discord
+      prismlauncher
 
       # Jetbrains IDEs
       jetbrains.clion
