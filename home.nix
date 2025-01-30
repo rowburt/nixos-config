@@ -49,10 +49,6 @@
       # Other IDEs
       arduino
       godot_4
-
-      # RStudio
-      rstudio
-      libxml2.dev
     ];
   };
 }
