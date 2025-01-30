@@ -36,6 +36,8 @@
       jetbrains.pycharm-professional
       # Rider is installed as a flatpak because of MSBuild issues
       jetbrains.rust-rover
+      jetbrains.webstorm
+      nodejs_23
 
       # Dependencies
       cargo
