@@ -4,7 +4,7 @@
   imports = [
     ./flatpak.nix
     ./gnome.nix
-    ./nixvim.nix
+    # ./nixvim.nix
     ./steam.nix
   ];
 }

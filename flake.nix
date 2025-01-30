@@ -15,10 +15,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nixvim = {
+    #   url = "github:nix-community/nixvim";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs =
@@ -38,7 +38,7 @@
         modules = [
           inputs.disko.nixosModules.disko
           inputs.nix-flatpak.nixosModules.nix-flatpak
-          inputs.nixvim.nixosModules.nixvim
+          # inputs.nixvim.nixosModules.nixvim
 
           ./host/configuration.nix
 
