@@ -31,11 +31,15 @@
 
     userSettings = {
       lsp = {
-        clangd.arguments = [ "-background-index" "-compile-commands-dir=build" ];
+        clangd.arguments = [
+          "-background-index"
+          "-compile-commands-dir=build"
+        ];
+
         dart.options.lineLength = 140;
 
-        # https://github.com/fwcd/kotlin-language-server/blob/main/server/src/main/kotlin/org/javacs/kt/Configuration.kt
         kotlin-language-server.settings = {
+          # https://github.com/fwcd/kotlin-language-server/blob/main/server/src/main/kotlin/org/javacs/kt/Configuration.kt
           inlayHints = {
             typeHints = true;
             parameterHints = true;
@@ -46,7 +50,10 @@
         };
 
         # TODO: Configure language servers
-        nixd.options.autoArchive = true;
+        nixd = {
+          formatting.command = [ "nixfmt" ];
+          options.autoArchive = true;
+        };
       };
 
       languages = {
@@ -58,7 +65,7 @@
       };
 
       file_types = {
-        CMake = ["CMakeLists.txt"];
+        CMake = [ "CMakeLists.txt" ];
       };
     };
   };

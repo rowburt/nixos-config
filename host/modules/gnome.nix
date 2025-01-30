@@ -5,13 +5,13 @@
   services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.gdm.enable = true;
   services.gnome.core-utilities.enable = false;
-  
+
   # Exclude more default GNOME packages
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     gnome-connections
   ];
-  
+
   # Install GNOME extensions
   environment.systemPackages = with pkgs.gnomeExtensions; [
     blur-my-shell
@@ -20,7 +20,7 @@
     media-controls
     pip-on-top
   ];
-  
+
   # Workaround for GNOME bug
   # https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
   systemd.services = {
@@ -28,4 +28,3 @@
     "autovt@tty1".enable = false;
   };
 }
-

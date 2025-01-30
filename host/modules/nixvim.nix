@@ -5,10 +5,10 @@
     enable = true;
     enableMan = true;
     defaultEditor = true;
-    
+
     viAlias = true;
     vimAlias = true;
-    
+
     colorschemes.rose-pine = {
       enable = true;
       settings = {
@@ -20,20 +20,20 @@
     opts = {
       # Start scrolling when specified amount of lines away from border
       scrolloff = 4;
-      
+
       # Line numbering
       number = true;
       relativenumber = true;
-      
+
       # Highlight current line
       cursorline = true;
-      
+
       # Tab settings
       tabstop = 2;
       shiftwidth = 2;
       softtabstop = 2;
       expandtab = true;
-      
+
       # Search
       incsearch = true;
       ignorecase = true;
@@ -45,7 +45,10 @@
       {
         key = "<A-w>";
         action = "<cmd>:w<CR>";
-        mode = [ "n" "i" ];
+        mode = [
+          "n"
+          "i"
+        ];
         options = {
           desc = "Save file";
           nowait = true;
@@ -63,7 +66,10 @@
       {
         key = "<A-e>";
         action = "<cmd>:bprev<CR>";
-        mode = [ "n" "i" ];
+        mode = [
+          "n"
+          "i"
+        ];
         options = {
           desc = "Move to previous file";
           nowait = true;
@@ -72,14 +78,17 @@
       {
         key = "<A-r>";
         action = "<cmd>:bnext<CR>";
-        mode = [ "n" "i" ];
+        mode = [
+          "n"
+          "i"
+        ];
         options = {
           desc = "Move to next file";
           nowait = true;
         };
       }
     ];
-    
+
     plugins = {
       treesitter.enable = true;
       undotree.enable = true;
@@ -120,7 +129,7 @@
 
       lsp = {
         enable = true;
-        
+
         servers = {
           bashls.enable = true;
           cmake.enable = true;
@@ -148,4 +157,3 @@
     };
   };
 }
-

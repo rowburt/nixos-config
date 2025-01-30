@@ -4,14 +4,14 @@
   imports = [
     # Include results of the hardware scan
     ./hardware-configuration.nix
-    
+
     # Include disko disk configuration
     ./disk-config.nix
 
     # Include system modules
     ./modules
   ];
-  
+
   # Enable bootloader, disko will manage our boot and encrypted partitions for us
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
@@ -27,14 +27,14 @@
       };
     };
   };
-  
+
   # Set user timezone from https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time.timeZone = "Europe/Amsterdam";
-  
+
   # Set locale values
   i18n = {
     defaultLocale = "en_US.UTF-8";
-    
+
     extraLocaleSettings = {
       LC_ADDRESS = "nl_NL.UTF-8";
       LC_IDENTIFICATION = "nl_NL.UTF-8";
@@ -47,13 +47,13 @@
       LC_TIME = "nl_NL.UTF-8";
     };
   };
-  
+
   # Configure networking
   networking = {
     networkmanager.enable = true;
     hostName = "envy";
   };
-  
+
   # Configure hardware
   hardware = {
     graphics.enable = true;
@@ -65,48 +65,54 @@
     graphics.extraPackages = with pkgs; [
       rocmPackages.clr.icd
     ];
-    
+
     bluetooth = {
       enable = true;
       powerOnBoot = true;
       settings.General.Experimental = true;
     };
   };
-  
+
   security = {
     apparmor.enable = true;
     polkit.enable = true;
     rtkit.enable = true;
   };
-  
+
   # Automatically clean up nix and enable experimental features
   nix = {
     optimise.automatic = true;
 
     settings = {
       auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
     };
-    
+
     gc = {
       automatic = true;
       dates = "daily";
       options = "--delete-older-than 21d";
     };
   };
-  
+
   # Configure user account
   users.users.robert = {
     description = "Robert";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+    ];
     isNormalUser = true;
-    
+
     ignoreShellProgramCheck = true;
     shell = pkgs.zsh;
   };
-  
+
   environment.shells = [ pkgs.zsh ];
-  
+
   # Configure useful services
   services = {
     printing = {
@@ -116,7 +122,7 @@
 
     # Disable because we are using auto-cpufreq
     power-profiles-daemon.enable = false;
-    
+
     auto-cpufreq = {
       enable = true;
       settings = {
@@ -124,29 +130,29 @@
           governor = "ondemand";
           turbo = "off";
         };
-        
+
         charger = {
           governor = "ondemand";
           turbo = "auto";
         };
       };
     };
-    
+
     displayManager.autoLogin = {
       enable = true;
       user = "robert";
     };
-    
+
     xserver = {
       enable = true;
       excludePackages = [ pkgs.xterm ];
-      
+
       xkb = {
         layout = "us";
         variant = "";
       };
     };
-    
+
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -154,8 +160,7 @@
       pulse.enable = true;
     };
   };
-  
+
   # Version of NixOS used for installation
   system.stateVersion = "24.05";
 }
-

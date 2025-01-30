@@ -1,6 +1,6 @@
 {
   description = "My NixOS system configuration";
-  
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
@@ -20,35 +20,35 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  
-  outputs = { nixpkgs, ... }@inputs:
-  let
-    pkgs = import nixpkgs {
-      system = "x86_64-linux";
-      config.allowUnfree = true;
-    };
-  in
-  {
-    nixosConfigurations.envy = nixpkgs.lib.nixosSystem {
-      specialArgs = {
-        inherit inputs pkgs;
+
+  outputs =
+    { nixpkgs, ... }@inputs:
+    let
+      pkgs = import nixpkgs {
+        system = "x86_64-linux";
+        config.allowUnfree = true;
       };
-      
-      modules = [
-        inputs.disko.nixosModules.disko
-        inputs.nix-flatpak.nixosModules.nix-flatpak
-        inputs.nixvim.nixosModules.nixvim
+    in
+    {
+      nixosConfigurations.envy = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs pkgs;
+        };
 
-        ./host/configuration.nix
+        modules = [
+          inputs.disko.nixosModules.disko
+          inputs.nix-flatpak.nixosModules.nix-flatpak
+          inputs.nixvim.nixosModules.nixvim
 
-        inputs.home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.robert = import ./home.nix;
-        }
-      ];
+          ./host/configuration.nix
+
+          inputs.home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.robert = import ./home.nix;
+          }
+        ];
+      };
     };
-  };
 }
-

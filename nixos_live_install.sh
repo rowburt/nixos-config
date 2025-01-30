@@ -10,4 +10,3 @@ sudo mv ./hardware-config.nix ./host
 
 # Start NixOS install
 sudo nixos-install --flake ./#envy && echo "Install finished, reboot to complete"
-
