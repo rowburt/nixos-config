@@ -6,8 +6,8 @@
       # "csharp"
       "csv"
       "dart"
+      "git-firefly"
       # "haskell"
-      "http"
       "java"
       "kotlin"
       "neocmake"
@@ -16,6 +16,7 @@
       "sql"
       "toml"
       "xml"
+      "zig"
     ];
 
     extraPackages = with pkgs; [
@@ -27,6 +28,7 @@
       neocmakelsp
       nixd
       nixfmt-rfc-style
+      zig
     ];
 
     userSettings = {
