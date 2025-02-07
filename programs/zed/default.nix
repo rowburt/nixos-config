@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  imports = [ ./extensions.nix ];
+  imports = [ ./extensions.nix ./keybinds.nix ];
 
   programs.zed-editor = {
     enable = true;
@@ -20,6 +20,7 @@
       git.inline_blame = {
         enabled = true;
         delay_ms = 500;
+        min_column = 80;
         show_commit_summary = true;
       };
 
@@ -29,7 +30,6 @@
       };
 
       theme = "Andromeda";
-      base_keymap = "JetBrains";
       search.regex = true;
       vim_mode = false;
 
