@@ -1,7 +1,10 @@
 { ... }:
 
 {
-  imports = [ ./extensions.nix ./keybinds.nix ];
+  imports = [
+    ./extensions.nix
+    ./keybinds.nix
+  ];
 
   programs.zed-editor = {
     enable = true;
@@ -29,6 +32,7 @@
         coloring = "indent_aware";
       };
 
+      # TODO: Colorful icon theme
       theme = "Andromeda";
       search.regex = true;
       vim_mode = false;
