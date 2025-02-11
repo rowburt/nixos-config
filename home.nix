@@ -32,7 +32,7 @@
 
       # Jetbrains IDEs
       jetbrains.clion
-      jetbrains.idea-ultimate
+      # jetbrains.idea-ultimate
       jetbrains.pycharm-professional
       # Rider is installed as a flatpak because of MSBuild issues
       jetbrains.rust-rover

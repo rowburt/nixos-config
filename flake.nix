@@ -21,6 +21,7 @@
     # };
   };
 
+  # TODO: Configure flake outputs properly without warnings
   outputs =
     { nixpkgs, ... }@inputs:
     let
