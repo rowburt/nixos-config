@@ -32,7 +32,8 @@
         coloring = "indent_aware";
       };
 
-      # TODO: Colorful icon theme
+      calls.mute_on_join = true;
+      icon_theme = "material-icon-theme";
       theme = "Andromeda";
       search.regex = true;
       vim_mode = false;

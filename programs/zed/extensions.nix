@@ -7,9 +7,9 @@
       "csv"
       "dart"
       "git-firefly"
-      # "haskell"
       "java"
       "kotlin"
+      "material-icon-theme"
       "neocmake"
       "nix"
       "qml"
@@ -20,6 +20,7 @@
     ];
 
     extraPackages = with pkgs; [
+      cargo
       clang-tools
       cmake
       gradle
@@ -28,6 +29,7 @@
       neocmakelsp
       nixd
       nixfmt-rfc-style
+      rustc
       zig
     ];
 
@@ -51,10 +53,13 @@
           formatting.ktfmt.maxWidth = 140;
         };
 
-        # TODO: Configure language servers
         nixd = {
           formatting.command = [ "nixfmt" ];
           options.autoArchive = true;
+        };
+
+        rust-analyser = {
+          # TODO: Use native rust packages
         };
       };
 

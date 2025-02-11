@@ -40,11 +40,9 @@
       nodejs_23
 
       # Dependencies
-      cargo
       gcc
       jdk
       python3
-      rustc
 
       # Other IDEs
       arduino

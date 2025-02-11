@@ -2,8 +2,6 @@
 
 {
   programs.zed-editor = {
-    # TODO: Disable JetBrains keymap once custom keymap is done
-    # userSettings.base_keymap = "JetBrains";
     userSettings.base_keymap = "None";
 
     userKeymaps = [
@@ -124,8 +122,9 @@
         bindings = {
           ctrl-t = "workspace::NewFile";
           ctrl-1 = "terminal_panel::ToggleFocus";
-          ctrl-q = "file_finder::Toggle";
-          ctrl-alt-q = "command_palette::Toggle";
+          ctrl-d = "file_finder::Toggle";
+          ctrl-alt-d = "outline::Toggle";
+          ctrl-shift-d = "command_palette::Toggle";
           ctrl-shift-f = "pane::DeploySearch";
         };
       }
