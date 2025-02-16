@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   programs.zed-editor = {
@@ -29,6 +29,7 @@
       neocmakelsp
       nixd
       nixfmt-rfc-style
+      rust-analyzer
       rustc
       zig
     ];
@@ -58,8 +59,8 @@
           options.autoArchive = true;
         };
 
-        rust-analyser = {
-          # TODO: Use native rust packages
+        rust-analyzer = {
+          binary.path = lib.getExe pkgs.rust-analyzer;
         };
       };
 
