@@ -3,13 +3,14 @@
 {
   programs.zed-editor = {
     extensions = [
+      "catppuccin"
+      "catppuccin-icons"
       # "csharp"
       "csv"
       "dart"
       "git-firefly"
       "java"
       "kotlin"
-      "material-icon-theme"
       "neocmake"
       "nix"
       "qml"
@@ -31,6 +32,7 @@
       nixfmt-rfc-style
       rust-analyzer
       rustc
+      rustfmt
       zig
     ];
 

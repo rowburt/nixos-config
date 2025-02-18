@@ -33,8 +33,8 @@
       };
 
       calls.mute_on_join = true;
-      icon_theme = "material-icon-theme";
-      theme = "Andromeda";
+      icon_theme = "Catppuccin Frappé";
+      theme = "Catppuccin Frappé";
       search.regex = true;
       vim_mode = false;
 
