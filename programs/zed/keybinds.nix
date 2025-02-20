@@ -4,6 +4,7 @@
   programs.zed-editor = {
     userSettings.base_keymap = "None";
 
+    # TODO: file delete dialog navigation and find everywhere goto
     userKeymaps = [
       {
         bindings = {
@@ -47,14 +48,6 @@
       }
 
       {
-        context = "Editor && mode == full";
-        bindings = {
-          enter = "editor::Newline";
-          ctrl-alt-l = "editor::Format";
-        };
-      }
-
-      {
         context = "BufferSearchBar";
         bindings = {
           enter = "search::SelectNextMatch";
@@ -63,7 +56,6 @@
       }
 
       {
-        # TODO: Add refactor ctrl alt L keybind
         context = "Editor";
         bindings = {
           up = "editor::MoveUp";
@@ -93,18 +85,38 @@
           ctrl-c = "editor::Copy";
           ctrl-x = "editor::Cut";
           ctrl-v = "editor::Paste";
+          ctrl-space = "editor::ShowCompletions";
 
           ctrl-z = "editor::Undo";
           ctrl-shift-z = "editor::Redo";
 
           ctrl-f = "buffer_search::Deploy";
           alt-f = "editor::SelectAllMatches";
+          ctrl-enter = "editor::GoToDefinition";
           "ctrl-/" = [
             "editor::ToggleComments"
             {
               "advance_downwards" = true;
             }
           ];
+        };
+      }
+
+      {
+        context = "Editor && mode == full";
+        bindings = {
+          enter = "editor::Newline";
+          ctrl-alt-l = "editor::Format";
+        };
+      }
+
+      {
+        context = "Editor && showing_completions";
+        bindings = {
+          enter = "editor::ConfirmCompletion";
+          tab = "editor::ComposeCompletion";
+          up = "editor::ContextMenuPrev";
+          down = "editor::ContextMenuNext";
         };
       }
 
@@ -122,9 +134,9 @@
         bindings = {
           ctrl-t = "workspace::NewFile";
           ctrl-1 = "terminal_panel::ToggleFocus";
-          ctrl-d = "file_finder::Toggle";
-          ctrl-alt-d = "outline::Toggle";
-          ctrl-shift-d = "command_palette::Toggle";
+          ctrl-d = "outline::Toggle";
+          ctrl-alt-d = "command_palette::Toggle";
+          ctrl-shift-d = "file_finder::Toggle";
           ctrl-shift-f = "pane::DeploySearch";
         };
       }
@@ -132,8 +144,8 @@
       {
         context = "Pane";
         bindings = {
-          ctrl-alt-left = "pane::GoBack";
-          ctrl-alt-right = "pane::GoForward";
+          ctrl-alt-left = "pane::ActivatePrevItem";
+          ctrl-alt-right = "pane::ActivateNextItem";
         };
       }
 
