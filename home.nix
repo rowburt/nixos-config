@@ -25,7 +25,6 @@
       nautilus
 
       # Desktop apps
-      alpaca
       deja-dup
       discord
       prismlauncher
