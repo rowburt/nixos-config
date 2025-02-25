@@ -115,11 +115,6 @@
 
   # Configure useful services
   services = {
-    printing = {
-      enable = true;
-      drivers = [ pkgs.hplip ];
-    };
-
     # Disable because we are using auto-cpufreq
     power-profiles-daemon.enable = false;
 
@@ -143,6 +138,25 @@
       user = "robert";
     };
 
+    ollama = {
+      enable = true;
+      loadModels = [
+        "deepseek-r1:1.5b"
+      ];
+    };
+
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
+
+    printing = {
+      enable = true;
+      drivers = [ pkgs.hplip ];
+    };
+
     xserver = {
       enable = true;
       excludePackages = [ pkgs.xterm ];
@@ -153,12 +167,6 @@
       };
     };
 
-    pipewire = {
-      enable = true;
-      alsa.enable = true;
-      alsa.support32Bit = true;
-      pulse.enable = true;
-    };
   };
 
   # Version of NixOS used for installation
