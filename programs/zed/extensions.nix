@@ -11,6 +11,7 @@
       "git-firefly"
       "java"
       "kotlin"
+      "latex"
       "neocmake"
       "nix"
       "qml"

@@ -4,7 +4,7 @@
   programs.zed-editor = {
     userSettings.base_keymap = "None";
 
-    # TODO: file delete dialog navigation and find everywhere goto
+    # TODO: file delete dialog navigation, find everywhere goto & terminal spawn new
     userKeymaps = [
       {
         bindings = {

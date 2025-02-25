@@ -32,17 +32,14 @@
 
       # Jetbrains IDEs
       jetbrains.clion
-      # jetbrains.idea-ultimate
-      jetbrains.pycharm-professional
+      jetbrains.idea-ultimate
       # Rider is installed as a flatpak because of MSBuild issues
-      jetbrains.rust-rover
       jetbrains.webstorm
       nodejs_23
 
       # Dependencies
       gcc
       jdk
-      python3
 
       # Other IDEs
       arduino
