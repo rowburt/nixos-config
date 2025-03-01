@@ -22,7 +22,6 @@
     ];
 
     extraPackages = with pkgs; [
-      cargo
       clang-tools
       cmake
       gradle
@@ -31,9 +30,9 @@
       neocmakelsp
       nixd
       nixfmt-rfc-style
+      package-version-server
       rust-analyzer
-      rustc
-      rustfmt
+      rustup
       zig
     ];
 
@@ -60,6 +59,10 @@
         nixd = {
           formatting.command = [ "nixfmt" ];
           options.autoArchive = true;
+        };
+
+        package-version-server = {
+          binary.path = lib.getExe pkgs.package-version-server;
         };
 
         rust-analyzer = {

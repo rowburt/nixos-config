@@ -4,7 +4,7 @@
   programs.zed-editor = {
     userSettings.base_keymap = "None";
 
-    # TODO: file delete dialog navigation, find everywhere goto & terminal spawn new
+    # TODO: File delete dialog navigation, ProjectSearch bindings
     userKeymaps = [
       {
         bindings = {
@@ -18,20 +18,10 @@
           ctrl-alt-o = "projects::OpenRecent";
           f11 = "zed::ToggleFullScreen";
           ctrl-w = "pane::CloseActiveItem";
-          escape = "menu::Cancel";
-          enter = "menu::Confirm";
-        };
-      }
 
-      {
-        context = "Workspace && !Terminal";
-        bindings = {
-          # Execute 'run' in the terminal
-          # Run is an alias provided by nix flake
-          ctrl-e = [
-            "workspace::SendKeystrokes"
-            "ctrl-1 ctrl-c run enter ctrl-1"
-          ];
+          "ctrl-=" = "zed::IncreaseBufferFontSize";
+          ctrl-- = "zed::DecreaseBufferFontSize";
+          ctrl-0 = "zed::ResetBufferFontSize";
         };
       }
 
@@ -44,6 +34,10 @@
             "workspace::SendKeystrokes"
             "ctrl-c run enter"
           ];
+
+          ctrl-t = "workspace::NewTerminal";
+          ctrl-shift-c = "terminal::Copy";
+          ctrl-shift-v = "terminal::Paste";
         };
       }
 
@@ -125,7 +119,9 @@
         bindings = {
           up = "menu::SelectPrev";
           down = "menu::SelectNext";
+          enter = "menu::Confirm";
           ctrl-enter = "menu::SecondaryConfirm";
+          escape = "menu::Cancel";
         };
       }
 
