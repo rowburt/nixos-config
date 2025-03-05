@@ -32,13 +32,15 @@
       # Jetbrains IDEs
       jetbrains.clion
       jetbrains.idea-ultimate
-      # Rider is installed as a flatpak because of MSBuild issues
+      jetbrains.rider
       jetbrains.webstorm
       nodejs_23
 
       # Dependencies
       gcc
       jdk
+      mono
+      dotnet-sdk_9
 
       # Other IDEs
       arduino

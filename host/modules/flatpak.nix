@@ -6,7 +6,6 @@
 
     packages = [
       "com.github.tchx84.Flatseal"
-      "com.jetbrains.Rider"
       "io.github.zen_browser.zen"
       "org.cvfosammmm.Setzer"
       "org.gnome.Calculator"

@@ -78,7 +78,7 @@
           "clion.desktop"
           "rust-rover.desktop"
           "pycharm-professional.desktop"
-          "com.jetbrains.Rider.desktop"
+          "rider.desktop"
         ];
       };
 
