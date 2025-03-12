@@ -34,7 +34,6 @@
         modules = [
           inputs.disko.nixosModules.disko
           inputs.nix-flatpak.nixosModules.nix-flatpak
-          # inputs.nixvim.nixosModules.nixvim
 
           ./host/configuration.nix
 
