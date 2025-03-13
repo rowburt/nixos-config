@@ -14,6 +14,7 @@
       btop
       curl
       gnupg
+      gource
       jq
       lm_sensors
       ripgrep

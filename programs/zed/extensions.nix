@@ -10,6 +10,7 @@
       "dart"
       "git-firefly"
       "java"
+      "just"
       "kotlin"
       "latex"
       "neocmake"
@@ -25,6 +26,7 @@
       clang-tools
       cmake
       gradle
+      just
       kdePackages.qtdeclarative
       ktfmt
       neocmakelsp
