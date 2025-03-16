@@ -13,7 +13,6 @@
       "just"
       "kotlin"
       "latex"
-      "neocmake"
       "nix"
       "qml"
       "sql"
@@ -23,13 +22,10 @@
     ];
 
     extraPackages = with pkgs; [
-      clang-tools
-      cmake
       gradle
       just
       kdePackages.qtdeclarative
       ktfmt
-      neocmakelsp
       nixd
       nixfmt-rfc-style
       package-version-server
@@ -40,11 +36,6 @@
 
     userSettings = {
       lsp = {
-        clangd.arguments = [
-          "-background-index"
-          "-compile-commands-dir=build"
-        ];
-
         dart.options.lineLength = 140;
 
         kotlin-language-server.settings = {
@@ -78,10 +69,6 @@
           "nixd"
           "!nil"
         ];
-      };
-
-      file_types = {
-        CMake = [ "CMakeLists.txt" ];
       };
     };
   };
