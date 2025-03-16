@@ -14,7 +14,6 @@
       "kotlin"
       "latex"
       "nix"
-      "qml"
       "sql"
       "toml"
       "xml"
@@ -24,7 +23,6 @@
     extraPackages = with pkgs; [
       gradle
       just
-      kdePackages.qtdeclarative
       ktfmt
       nixd
       nixfmt-rfc-style
