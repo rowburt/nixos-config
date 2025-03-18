@@ -22,7 +22,7 @@
 
       git.inline_blame = {
         enabled = true;
-        delay_ms = 500;
+        delay_ms = 0;
         min_column = 80;
         show_commit_summary = true;
       };
@@ -33,6 +33,9 @@
       };
 
       calls.mute_on_join = true;
+      diagnostics.inline.enabled = true;
+      inlay_hints.enabled = true;
+
       icon_theme = "Catppuccin Frappé";
       theme = "Catppuccin Frappé";
       search.regex = true;
