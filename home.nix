@@ -17,7 +17,6 @@
       gource
       jq
       lm_sensors
-      ripgrep
 
       # Useful GNOME packages
       gnome-disk-utility
