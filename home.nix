@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, zen-browser, ... }:
 
 {
   imports = [ ./programs ];
@@ -28,6 +28,7 @@
       deja-dup
       discord
       prismlauncher
+      zen-browser.packages."${system}".default
 
       # Jetbrains IDEs
       jetbrains.clion

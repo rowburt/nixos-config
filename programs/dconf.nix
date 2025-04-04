@@ -72,7 +72,7 @@
         ];
 
         favorite-apps = [
-          "app.zen_browser.zen.desktop"
+          "zen-beta.desktop"
           "dev.zed.Zed.desktop"
           "idea-ultimate.desktop"
           "clion.desktop"

@@ -5,7 +5,6 @@
     enable = true;
 
     packages = [
-      "io.github.zen_browser.zen"
       "org.cvfosammmm.Setzer"
       "org.gnome.Calculator"
       "org.gnome.clocks"
