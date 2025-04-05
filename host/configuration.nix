@@ -58,9 +58,6 @@
   hardware = {
     graphics.enable = true;
 
-    # Required for steam
-    graphics.enable32Bit = true;
-
     # Enable OpenCL support on AMD hardware
     graphics.extraPackages = with pkgs; [
       rocmPackages.clr.icd
@@ -101,11 +98,11 @@
   # Configure user account
   users.users.robert = {
     description = "Robert";
+    isNormalUser = true;
     extraGroups = [
       "wheel"
       "networkmanager"
     ];
-    isNormalUser = true;
 
     ignoreShellProgramCheck = true;
     shell = pkgs.zsh;
@@ -166,7 +163,6 @@
         variant = "";
       };
     };
-
   };
 
   # Version of NixOS used for installation
