@@ -135,13 +135,6 @@
       user = "robert";
     };
 
-    ollama = {
-      enable = true;
-      loadModels = [
-        "deepseek-r1:1.5b"
-      ];
-    };
-
     pipewire = {
       enable = true;
       alsa.enable = true;
