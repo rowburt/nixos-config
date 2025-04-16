@@ -27,6 +27,7 @@
       # Desktop apps
       deja-dup
       discord
+      iotas
       prismlauncher
       zen-browser.packages."${system}".default
 
