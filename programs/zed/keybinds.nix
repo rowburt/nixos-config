@@ -5,14 +5,15 @@
     userSettings.base_keymap = "None";
 
     # TODO: File delete dialog navigation, ProjectSearch bindings
+    # Useful info: https://github.com/zed-industries/zed/issues/14718
     userKeymaps = [
       {
         bindings = {
-          # Execute 'run' in the terminal
-          # Run is an alias provided by nix flake
+          # Execute 'just run' in the terminal
+          # This will start the run recipe listed in the project's justfile
           ctrl-e = [
             "workspace::SendKeystrokes"
-            "ctrl-1 ctrl-c run enter ctrl-1"
+            "ctrl-1 ctrl-c just space run enter ctrl-1"
           ];
 
           ctrl-alt-o = "projects::OpenRecent";
@@ -28,11 +29,11 @@
       {
         context = "Terminal";
         bindings = {
-          # Execute 'run' in the terminal
-          # Run is an alias provided by nix flake
+          # Execute 'just run' in the terminal
+          # This will start the run recipe listed in the project's justfile
           ctrl-e = [
             "workspace::SendKeystrokes"
-            "ctrl-c run enter"
+            "ctrl-c just space run enter"
           ];
 
           ctrl-t = "workspace::NewTerminal";
@@ -140,14 +141,16 @@
       {
         context = "Pane";
         bindings = {
-          ctrl-alt-left = "pane::ActivatePrevItem";
-          ctrl-alt-right = "pane::ActivateNextItem";
+          alt-left = "pane::ActivatePrevItem";
+          alt-right = "pane::ActivateNextItem";
         };
       }
 
       {
         context = "ProjectPanel";
-        bindings.delete = "project_panel::Trash";
+        bindings = {
+          delete = "project_panel::Trash";
+        };
       }
     ];
   };
