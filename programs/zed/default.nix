@@ -32,6 +32,12 @@
         coloring = "indent_aware";
       };
 
+      assistant = {
+        enabled = false;
+        button = false;
+      };
+
+      show_edit_predictions = false;
       calls.mute_on_join = true;
       diagnostics.inline.enabled = true;
       inlay_hints.enabled = true;
