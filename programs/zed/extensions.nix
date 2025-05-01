@@ -21,15 +21,11 @@
     ];
 
     extraPackages = with pkgs; [
-      gradle
-      just
       ktfmt
       nixd
       nixfmt-rfc-style
       package-version-server
       rust-analyzer
-      rustup
-      zig
     ];
 
     userSettings = {

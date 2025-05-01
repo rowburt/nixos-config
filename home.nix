@@ -16,13 +16,8 @@
       gnupg
       gource
       jq
+      just
       lm_sensors
-
-      # Useful GNOME packages
-      gnome-disk-utility
-      gnome-software
-      gnome-tweaks
-      nautilus
 
       # Desktop apps
       deja-dup
@@ -38,15 +33,25 @@
       jetbrains.webstorm
       nodejs_23
 
-      # Dependencies
-      gcc
-      jdk
-      mono
-      dotnet-sdk_9
-
       # Other IDEs
       arduino
       godot_4
+
+      # Dependencies
+      dart
+      dotnet-sdk_9
+      gcc
+      gradle
+      jdk
+      mono
+      rustup
+      zig
+
+      # Useful GNOME packages
+      gnome-disk-utility
+      gnome-software
+      gnome-tweaks
+      nautilus
     ];
   };
 }
