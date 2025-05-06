@@ -52,6 +52,10 @@
       gnome-software
       gnome-tweaks
       nautilus
+
+      # LaTeX
+      texliveFull
+      texstudio
     ];
   };
 }

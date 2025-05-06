@@ -5,7 +5,6 @@
     enable = true;
 
     packages = [
-      "org.cvfosammmm.Setzer"
       "org.gnome.Calculator"
       "org.gnome.clocks"
       "org.gnome.Loupe"
