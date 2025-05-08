@@ -31,7 +31,7 @@
       jetbrains.idea-ultimate
       jetbrains.rider
       jetbrains.webstorm
-      nodejs_23
+      nodejs_24
 
       # Other IDEs
       arduino
