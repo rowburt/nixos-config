@@ -32,6 +32,7 @@
       jetbrains.rider
       jetbrains.webstorm
       nodejs_24
+      vite
 
       # Other IDEs
       arduino
