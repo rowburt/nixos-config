@@ -2,9 +2,14 @@
 
 {
   # Enable GNOME with GDM and disable most preinstalled apps
-  services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.gnome.core-utilities.enable = false;
+  services = {
+    gnome.core-apps.enable = false;
+
+    xserver = {
+      desktopManager.gnome.enable = true;
+      displayManager.gdm.enable = true;
+    };
+  };
 
   # Exclude more default GNOME packages
   environment.gnome.excludePackages = with pkgs; [
