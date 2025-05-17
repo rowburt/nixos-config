@@ -19,6 +19,20 @@
       "org/gnome/shell/extensions/caffeine".enable-fullscreen = false;
       "org/gnome/shell/extensions/blur-my-shell".settings-version = 2;
 
+      "org/gnome/desktop/break-reminders" = {
+        selected-breaks = [ "movement" ];
+      };
+
+      "org/gnome/desktop/break-reminders/eyesight" = {
+        play-sound = true;
+      };
+
+      "org/gnome/desktop/break-reminders/movement" = {
+        duration-seconds = (lib.hm.gvariant.mkUint32 300);
+        interval-seconds = (lib.hm.gvariant.mkUint32 1800);
+        play-sound = true;
+      };
+
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
         gtk-enable-primary-paste = true;
