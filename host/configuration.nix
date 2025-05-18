@@ -110,8 +110,19 @@
 
   environment.shells = [ pkgs.zsh ];
 
+  # Automatically add flathub repo to flatpak
+  # https://nixos.wiki/wiki/Flatpak
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
   # Configure useful services
   services = {
+    flatpak.enable = true;
     # Disable because we are using auto-cpufreq
     power-profiles-daemon.enable = false;
 

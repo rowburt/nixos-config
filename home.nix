@@ -23,6 +23,7 @@
       deja-dup
       discord
       iotas
+      onlyoffice-desktopeditors
       prismlauncher
       zen-browser.packages."${system}".default
 
@@ -49,10 +50,16 @@
       zig
 
       # Useful GNOME packages
+      gnome-calculator
+      gnome-clocks
       gnome-disk-utility
       gnome-software
+      gnome-text-editor
       gnome-tweaks
+      decibels
+      loupe
       nautilus
+      papers
 
       # LaTeX
       texliveFull

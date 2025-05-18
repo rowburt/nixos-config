@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nix-flatpak.url = "github:gmodena/nix-flatpak/latest";
 
     disko = {
       url = "github:nix-community/disko";
@@ -38,7 +37,6 @@
 
         modules = [
           inputs.disko.nixosModules.disko
-          inputs.nix-flatpak.nixosModules.nix-flatpak
 
           ./host/configuration.nix
 

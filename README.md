@@ -3,7 +3,6 @@
 My NixOS configuration files containing:
 
 - GNOME desktop environment.
-- [Declarative flatpaks](https://github.com/gmodena/nix-flatpak) for installing useful applications.
 - [Disko](https://github.com/nix-community/disko) disk layout for Btrfs with subvolumes in a LUKS partition.
 - [Flakes](https://nixos.wiki/wiki/flakes) for a reproducible build of the system.
 - [Home manager](https://github.com/nix-community/home-manager) user configuration.
@@ -19,4 +18,3 @@ The following resources were used while writing this config:
 - [Lennox's NixOS config](https://github.com/lennoxlotl/nixos-files)
 - [Wil T](https://youtu.be/axOxLJ4BWmY)
 - [Practical nix flakes](https://serokell.io/blog/practical-nix-flakes)
-- [Nix-flatpak](https://github.com/gmodena/nix-flatpak)
