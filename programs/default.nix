@@ -5,9 +5,9 @@
   imports = [
     ./alacritty.nix
     ./dconf.nix
-    # ./firefox.nix
     ./git.nix
     ./zed
+    ./zen-browser.nix
     ./zsh.nix
   ];
 }

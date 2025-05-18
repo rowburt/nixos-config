@@ -1,4 +1,4 @@
-{ pkgs, zen-browser, ... }:
+{ pkgs, ... }:
 
 {
   imports = [ ./programs ];
@@ -25,7 +25,6 @@
       iotas
       onlyoffice-desktopeditors
       prismlauncher
-      zen-browser.packages."${system}".default
 
       # Jetbrains IDEs
       jetbrains.clion
