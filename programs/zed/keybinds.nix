@@ -51,6 +51,14 @@
       }
 
       {
+        context = "ProjectSearchBar";
+        bindings = {
+          ctrl-shift-f = "search::FocusSearch";
+          enter = "menu::Confirm";
+        };
+      }
+
+      {
         context = "Editor";
         bindings = {
           up = "editor::MoveUp";
