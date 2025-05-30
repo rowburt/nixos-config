@@ -42,10 +42,12 @@
 
           inputs.home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = inputs;
-            home-manager.users.robert = import ./home.nix;
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = inputs;
+              users.robert = import ./home.nix;
+            };
           }
         ];
       };
