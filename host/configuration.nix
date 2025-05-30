@@ -141,6 +141,12 @@
       };
     };
 
+    btrfs.autoScrub = {
+      enable = true;
+      fileSystems = [ "/" ];
+      interval = "weekly";
+    };
+
     displayManager.autoLogin = {
       enable = true;
       user = "robert";
