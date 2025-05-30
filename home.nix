@@ -45,7 +45,9 @@
       gradle
       jdk
       mono
+      python3
       rustup
+      uv
       zig
 
       # Useful GNOME packages
