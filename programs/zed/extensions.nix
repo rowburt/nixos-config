@@ -13,6 +13,7 @@
       "just"
       "kotlin"
       "latex"
+      "lua"
       "nix"
       "sql"
       "toml"
@@ -22,6 +23,7 @@
 
     extraPackages = with pkgs; [
       ktfmt
+      lua-language-server
       nixd
       nixfmt-rfc-style
       package-version-server
@@ -43,6 +45,10 @@
           formatting.ktfmt.maxWidth = 140;
         };
 
+        lua-language-server = {
+          binary.path = lib.getExe pkgs.lua-language-server;
+        };
+
         nixd = {
           formatting.command = [ "nixfmt" ];
           options.autoArchive = true;
@@ -58,6 +64,11 @@
       };
 
       languages = {
+        Lua = {
+          format_on_save = "on";
+          formatter = "language_server";
+        };
+
         # Only use nixd for nix files
         Nix.language_servers = [
           "nixd"
