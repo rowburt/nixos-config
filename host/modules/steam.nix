@@ -1,6 +1,10 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
-  programs.steam.enable = true;
-  hardware.graphics.enable32Bit = true;
+  programs.steam = {
+    enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+  };
 }
