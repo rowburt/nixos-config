@@ -6,6 +6,7 @@
     ./alacritty.nix
     ./dconf.nix
     ./git.nix
+    ./tmux.nix
     ./zed
     ./zen-browser.nix
     ./zsh.nix

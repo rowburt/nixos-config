@@ -4,19 +4,24 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      window.opacity = 0.85;
+      selection.save_to_clipboard = true;
+
+      window = {
+        opacity = 0.85;
+        startup_mode = "Maximized";
+      };
+
       cursor.style = {
         shape = "Beam";
         blinking = "On";
       };
 
-      keyboard.bindings = [
-        {
-          key = "T";
-          mods = "Control";
-          action = "CreateNewWindow";
-        }
+      terminal.shell = {
+        program = "tmux";
+        args = [ "attach" ];
+      };
 
+      keyboard.bindings = [
         {
           key = "C";
           mods = "Control|Shift";
