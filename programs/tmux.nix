@@ -7,5 +7,9 @@
     clock24 = true;
     newSession = true;
     terminal = "screen-256color";
+
+    extraConfig = ''
+      set-option -g renumber-windows on
+    '';
   };
 }
