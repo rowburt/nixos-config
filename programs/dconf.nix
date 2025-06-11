@@ -20,7 +20,7 @@
       "org/gnome/shell/extensions/blur-my-shell".settings-version = 2;
 
       "org/gnome/desktop/break-reminders" = {
-        selected-breaks = [ "movement" ];
+        selected-breaks = [ ];
       };
 
       "org/gnome/desktop/break-reminders/eyesight" = {
