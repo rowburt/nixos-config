@@ -22,6 +22,7 @@
       # Desktop apps
       deja-dup
       discord
+      glide-media-player
       iotas
       onlyoffice-desktopeditors
       prismlauncher
