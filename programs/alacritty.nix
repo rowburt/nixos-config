@@ -16,11 +16,6 @@
         blinking = "On";
       };
 
-      terminal.shell = {
-        program = "tmux";
-        args = [ "attach" ];
-      };
-
       keyboard.bindings = [
         {
           key = "C";
