@@ -31,9 +31,6 @@
       jetbrains.clion
       jetbrains.idea-ultimate
       jetbrains.rider
-      jetbrains.webstorm
-      nodejs_24
-      vite
 
       # Other IDEs
       arduino
