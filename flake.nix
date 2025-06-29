@@ -25,19 +25,11 @@
     };
   };
 
-  # TODO: Configure flake outputs properly without warnings
-  outputs =
-    { nixpkgs, ... }@inputs:
-    let
-      pkgs = import nixpkgs {
-        system = "x86_64-linux";
-        config.allowUnfree = true;
-      };
-    in
+  outputs = { nixpkgs, ... }@inputs:
     {
       nixosConfigurations.envy = nixpkgs.lib.nixosSystem {
         specialArgs = {
-          inherit inputs pkgs;
+          inherit inputs;
         };
 
         modules = [

@@ -31,6 +31,8 @@
   # Set user timezone from https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time.timeZone = "Europe/Amsterdam";
 
+  nixpkgs.config.allowUnfree = true;
+
   # Set locale values
   i18n = {
     defaultLocale = "en_US.UTF-8";
