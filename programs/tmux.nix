@@ -6,7 +6,7 @@
     baseIndex = 1;
     clock24 = true;
     newSession = true;
-    terminal = "alacritty";
+    terminal = "screen-256color";
 
     extraConfig = ''
       set-option -g escape-time 50
