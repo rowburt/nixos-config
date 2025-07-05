@@ -12,6 +12,7 @@
       set-option -g escape-time 50
       set-option -g focus-events on
       set-option -g renumber-windows on
+      set-option -g terminal-features 'alacritty:RGB'
     '';
   };
 }
