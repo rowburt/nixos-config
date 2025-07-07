@@ -24,8 +24,9 @@
 
     dependencies.ripgrep.enable = true;
     diagnostic.settings.virtual_text = true;
+    globals.mapleader = " ";
 
     opts = import ./options.nix;
-    plugins = import ./plugins.nix;
+    plugins = import ./plugins;
   };
 }
