@@ -7,7 +7,7 @@ update:
     sudo nix flake update
     just rebuild
 
-[doc('Alias to `rebuild`, done so rebuilding can be easily done through Zed keybindings')]
+[doc('Alias to `rebuild`, done so rebuilding can be easily done through editor keybindings')]
 run: rebuild
 
 [doc('Copy the NixOS configuration to the system NixOS configuration path')]
