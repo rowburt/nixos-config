@@ -1,6 +1,14 @@
 {
   enable = true;
 
+  keymaps = {
+    lspBuf = {
+      gd = "definition";
+      gr = "references";
+      K = "hover";
+    };
+  };
+
   # TODO: Configure LSPs
   servers = {
     dartls.enable = true;

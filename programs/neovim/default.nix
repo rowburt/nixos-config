@@ -26,6 +26,7 @@
     diagnostic.settings.virtual_text = true;
     globals.mapleader = " ";
 
+    keymaps = import ./keymap.nix;
     opts = import ./options.nix;
     plugins = import ./plugins;
   };
