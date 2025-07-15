@@ -28,7 +28,6 @@
       prismlauncher
 
       # Jetbrains IDEs
-      jetbrains.clion
       jetbrains.idea-ultimate
       jetbrains.rider
 

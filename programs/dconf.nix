@@ -86,6 +86,7 @@
         ];
 
         favorite-apps = [
+          "Alacritty.desktop"
           "zen-beta.desktop"
           "dev.zed.Zed.desktop"
           "idea-ultimate.desktop"
