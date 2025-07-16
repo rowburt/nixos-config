@@ -5,7 +5,7 @@
     lspBuf = {
       gd = "definition";
       gr = "references";
-      K = "hover";
+      gk = "hover";
     };
   };
 

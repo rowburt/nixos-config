@@ -6,6 +6,7 @@
   treesitter = import ./treesitter.nix;
 
   lazydev.enable = true;
+  lsp-format.enable = true;
   # TODO: undotree.enable = true;
   web-devicons.enable = true;
   which-key.enable = true;
