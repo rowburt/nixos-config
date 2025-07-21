@@ -8,7 +8,7 @@
     ./git.nix
     ./neovim
     ./tmux.nix
-    ./zed
+    # ./zed
     ./zen-browser.nix
     ./zsh.nix
   ];
