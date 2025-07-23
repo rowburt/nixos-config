@@ -23,8 +23,13 @@
     };
 
     dependencies.ripgrep.enable = true;
-    diagnostic.settings.virtual_text = true;
     globals.mapleader = " ";
+
+    diagnostic.settings = {
+      virtual_lines.current_line = true;
+      virtual_text = false;
+      update_in_insert = true;
+    };
 
     keymaps = import ./keymap.nix;
     opts = import ./options.nix;
