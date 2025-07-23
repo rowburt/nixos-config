@@ -52,6 +52,7 @@
 
       autosave.after_delay.milliseconds = 0;
       auto_update = false;
+      disable_ai = true;
     };
   };
 }
