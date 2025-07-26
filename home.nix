@@ -28,8 +28,8 @@
       prismlauncher
 
       # Jetbrains IDEs
-      # jetbrains.idea-ultimate
-      # jetbrains.rider
+      jetbrains.idea-ultimate
+      jetbrains.rider
 
       # Other IDEs
       arduino
