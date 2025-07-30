@@ -60,8 +60,8 @@
       papers
 
       # LaTeX
-      texliveFull
-      texstudio
+      # texliveFull
+      # texstudio
     ];
   };
 }
