@@ -7,6 +7,7 @@
     enable = true;
 
     policies = {
+      DisableAppUpdate = true;
       DisableTelemetry = true;
       NoDefaultBookmarks = true;
       PasswordManagerEnabled = false;
