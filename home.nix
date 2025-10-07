@@ -18,6 +18,7 @@
       jq
       just
       lm_sensors
+      sqlite
 
       # Desktop apps
       deja-dup
