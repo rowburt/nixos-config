@@ -3,9 +3,15 @@
 {
   programs.git = {
     enable = true;
-    userName = "rowburt";
-    userEmail = "32477930+rowburt@users.noreply.github.com";
-    extraConfig.init.defaultBranch = "main";
+
+    settings = {
+      init.defaultBranch = "main";
+
+      user = {
+        name = "rowburt";
+        email = "32477930+rowburt@users.noreply.github.com";
+      };
+    };
 
     signing = {
       key = "A406A7AD63012D0D";
