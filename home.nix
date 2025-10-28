@@ -58,10 +58,6 @@
       loupe
       nautilus
       papers
-
-      # LaTeX
-      # texliveFull
-      # texstudio
     ];
   };
 }
