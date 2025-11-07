@@ -27,13 +27,13 @@
       onlyoffice-desktopeditors
       prismlauncher
 
-      # Other IDEs
+      # IDEs
       arduino
       godot_4
 
       # Dependencies
-      dart
       dotnet-sdk_9
+      flutter
       gcc
       gradle
       jdk
