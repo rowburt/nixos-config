@@ -22,7 +22,6 @@
 
       # Desktop apps
       deja-dup
-      glide-media-player
       iotas
       onlyoffice-desktopeditors
       prismlauncher
@@ -54,6 +53,7 @@
       loupe
       nautilus
       papers
+      showtime
     ];
   };
 }
