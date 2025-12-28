@@ -37,6 +37,8 @@
       gradle
       jdk
       mono
+      nodejs
+      pnpm
       python3
       rustup
       uv
