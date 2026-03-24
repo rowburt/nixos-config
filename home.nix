@@ -35,7 +35,7 @@
       flutter
       gcc
       gradle
-      jdk
+      jdk25
       mono
       nodejs
       pnpm
