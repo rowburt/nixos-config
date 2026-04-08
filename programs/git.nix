@@ -6,6 +6,7 @@
 
     settings = {
       init.defaultBranch = "main";
+      core.autocrlf = "input";
 
       user = {
         name = "rowburt";
