@@ -109,7 +109,10 @@
     shell = pkgs.zsh;
   };
 
-  environment.shells = [ pkgs.zsh ];
+  environment = {
+    shells = [ pkgs.zsh ];
+    sessionVariables.XDG_CONFIG_HOME = "$HOME/.config";
+  };
 
   # Automatically add flathub repo to flatpak
   # https://nixos.wiki/wiki/Flatpak
