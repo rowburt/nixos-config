@@ -80,7 +80,7 @@
         enabled-extensions = [
           "blur-my-shell@aunetx"
           "caffeine@patapon.info"
-          "dash-to-dock@micxgx.gmail.com"
+          # "dash-to-dock@micxgx.gmail.com"
           "mediacontrols@cliffniff.github.com"
           "pip-on-top@rafostar.github.com"
         ];
