@@ -18,6 +18,7 @@
       jq
       just
       lm_sensors
+      nh
       sqlite
 
       # Desktop apps
@@ -27,8 +28,8 @@
       prismlauncher
 
       # IDEs
-      arduino
       godot_4
+      jetbrains.idea
 
       # Dependencies
       dotnet-sdk_9
