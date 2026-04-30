@@ -88,10 +88,8 @@
         favorite-apps = [
           "Alacritty.desktop"
           "zen-beta.desktop"
-          "dev.zed.Zed.desktop"
-          "com.google.AndroidStudio.desktop"
-          "com.jetbrains.IntelliJ-IDEA-Community.desktop"
-          "com.jetbrains.IntelliJ-IDEA-Ultimate.desktop"
+          # "com.google.AndroidStudio.desktop"
+          "idea.desktop"
           "clion.desktop"
           "rust-rover.desktop"
           "pycharm-professional.desktop"
