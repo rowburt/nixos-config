@@ -18,7 +18,6 @@
   environment.systemPackages = with pkgs.gnomeExtensions; [
     blur-my-shell
     caffeine
-    dash-to-dock
     media-controls
     pip-on-top
   ];
