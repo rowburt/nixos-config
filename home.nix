@@ -35,6 +35,7 @@
       dotnet-sdk_9
       flutter
       gcc
+      gnumake
       gradle
       jdk25
       mono
