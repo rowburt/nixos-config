@@ -10,6 +10,13 @@
 
     # Install generic user packages
     packages = with pkgs; [
+      # Niri dependencies
+      brightnessctl
+      font-awesome
+      playerctl
+      swaylock
+      xwayland-satellite
+
       # Terminal utils
       btop
       curl
