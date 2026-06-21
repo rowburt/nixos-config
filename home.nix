@@ -30,6 +30,7 @@
 
       # Desktop apps
       deja-dup
+      en-croissant
       iotas
       onlyoffice-desktopeditors
       prismlauncher
