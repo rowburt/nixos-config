@@ -14,7 +14,7 @@
     gnome-connections
   ];
 
-  # Install GNOME extensions
+  # Install useful GNOME shell extensions
   environment.systemPackages = with pkgs.gnomeExtensions; [
     blur-my-shell
     caffeine
