@@ -5,6 +5,7 @@
     niri.homeModules.niri
 
     ./kanshi.nix
+    ./noctalia.nix
   ];
 
   programs.niri = {
@@ -12,15 +13,7 @@
     package = pkgs.niri;
   };
 
-  programs = {
-    fuzzel.enable = true;
-    # swaylock.enable = true;
-    waybar.enable = true;
-  };
-
   services = {
-    awww.enable = true;
-    mako.enable = true;
     polkit-gnome.enable = true;
   };
 }

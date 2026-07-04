@@ -76,7 +76,6 @@
     apparmor.enable = true;
     polkit.enable = true;
     rtkit.enable = true;
-    pam.services.swaylock = {};
   };
 
   # Automatically clean up nix and enable experimental features
