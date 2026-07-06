@@ -3,7 +3,7 @@
 {
   imports = [
     ./gnome.nix
-    # ./niri.nix
+    ./niri.nix
     ./steam.nix
   ];
 }
