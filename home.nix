@@ -27,13 +27,12 @@
 
       # Desktop apps
       deja-dup
-      en-croissant
       iotas
       onlyoffice-desktopeditors
       prismlauncher
 
       # IDEs
-      godot_4
+      jetbrains.clion
       jetbrains.idea
 
       # Dependencies
