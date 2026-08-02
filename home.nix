@@ -11,11 +11,8 @@
     # Install generic user packages
     packages = with pkgs; [
       # Niri dependencies
-      brightnessctl
-      font-awesome
-      playerctl
-      swaylock
       xwayland-satellite
+      gamescope
 
       # Terminal utils
       btop
