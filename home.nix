@@ -49,6 +49,7 @@
       rustup
       uv
       zig
+      zls
 
       # Useful GNOME packages
       gnome-calculator
