@@ -43,8 +43,6 @@
       gradle
       jdk25
       mono
-      nodejs
-      pnpm
       python3
       rustup
       uv
