@@ -83,6 +83,8 @@
     optimise.automatic = true;
 
     settings = {
+      cores = 2;
+
       experimental-features = [
         "nix-command"
         "flakes"
