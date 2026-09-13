@@ -1,4 +1,4 @@
-{ noctalia, ... }:
+{ noctalia, pkgs, ... }:
 
 {
   imports = [
@@ -7,6 +7,7 @@
 
   programs.noctalia = {
     enable = true;
+    package = pkgs.noctalia;
   };
 }
 
