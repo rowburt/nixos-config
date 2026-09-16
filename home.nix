@@ -22,7 +22,6 @@
       jq
       just
       lm_sensors
-      nh
       sqlite
 
       # Desktop apps

@@ -78,24 +78,13 @@
     rtkit.enable = true;
   };
 
-  # Automatically clean up nix and enable experimental features
-  nix = {
-    optimise.automatic = true;
+  nix.settings = {
+    cores = 2;
 
-    settings = {
-      cores = 2;
-
-      experimental-features = [
-        "nix-command"
-        "flakes"
-      ];
-    };
-
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 21d";
-    };
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
   };
 
   # Configure user account

@@ -7,6 +7,7 @@
     ./dconf.nix
     ./git.nix
     ./neovim
+    ./nh.nix
     ./niri
     ./tmux.nix
     ./zen-browser.nix
