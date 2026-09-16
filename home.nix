@@ -38,7 +38,6 @@
       # Dependencies
       cmake
       dotnet-sdk_9
-      flutter
       gcc16
       gnumake
       gradle
