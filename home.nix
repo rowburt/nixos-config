@@ -36,9 +36,10 @@
       jetbrains.idea
 
       # Dependencies
+      cmake
       dotnet-sdk_9
       flutter
-      gcc
+      gcc16
       gnumake
       gradle
       jdk25
