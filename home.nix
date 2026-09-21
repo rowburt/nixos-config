@@ -38,6 +38,7 @@
       cmake
       dotnet-sdk_9
       gcc16
+      gdb
       gnumake
       gradle
       jdk25
