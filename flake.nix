@@ -19,6 +19,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixvim = {
       url = "github:nix-community/nixvim";
       # inputs.nixpkgs.follows = "nixpkgs";
@@ -37,7 +42,7 @@
 
   outputs = { nixpkgs, ... }@inputs:
     {
-      nixosConfigurations.envy = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.sakura = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
         };
@@ -56,6 +61,8 @@
               users.robert = import ./home.nix;
             };
           }
+
+          inputs.nixos-hardware.nixosModules.framework-intel-core-ultra-series3
         ];
       };
     };

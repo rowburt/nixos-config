@@ -53,7 +53,7 @@
   # Configure networking
   networking = {
     networkmanager.enable = true;
-    hostName = "envy";
+    hostName = "sakura";
   };
 
   # Configure hardware
@@ -118,23 +118,8 @@
   # Configure useful services
   services = {
     flatpak.enable = true;
-    # Disable because we are using auto-cpufreq
-    power-profiles-daemon.enable = false;
 
-    auto-cpufreq = {
-      enable = true;
-      settings = {
-        battery = {
-          governor = "ondemand";
-          turbo = "off";
-        };
-
-        charger = {
-          governor = "ondemand";
-          turbo = "auto";
-        };
-      };
-    };
+    # TODO: Power scaling
 
     btrfs.autoScrub = {
       enable = true;
