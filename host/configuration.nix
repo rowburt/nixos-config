@@ -58,12 +58,8 @@
 
   # Configure hardware
   hardware = {
+    amdgpu.opencl.enable = true;
     graphics.enable = true;
-
-    # Enable OpenCL support on AMD hardware
-    graphics.extraPackages = with pkgs; [
-      rocmPackages.clr.icd
-    ];
 
     bluetooth = {
       enable = true;
