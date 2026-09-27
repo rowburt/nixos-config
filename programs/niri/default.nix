@@ -10,6 +10,8 @@
 
   programs.niri = {
     enable = true;
+
+    # Use the package enabled in host/modules/niri.nix
     package = pkgs.niri;
   };
 

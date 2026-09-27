@@ -43,8 +43,6 @@
         };
 
         modules = [
-          inputs.disko.nixosModules.disko
-
           ./host/configuration.nix
 
           inputs.home-manager.nixosModules.home-manager
