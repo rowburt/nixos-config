@@ -6,6 +6,16 @@
     desktopManager.gnome.enable = true;
     # displayManager.gdm.enable = true;
     gnome.core-apps.enable = false;
+
+    xserver = {
+      enable = true;
+      excludePackages = [ pkgs.xterm ];
+
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
+    };
   };
 
   # Exclude more default GNOME packages

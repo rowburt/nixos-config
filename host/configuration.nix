@@ -154,16 +154,6 @@
       enable = true;
       drivers = [ pkgs.hplip ];
     };
-
-    xserver = {
-      enable = true;
-      excludePackages = [ pkgs.xterm ];
-
-      xkb = {
-        layout = "us";
-        variant = "";
-      };
-    };
   };
 
   # Version of NixOS used for installation
