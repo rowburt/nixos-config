@@ -12,7 +12,7 @@
     ./modules
   ];
 
-  # Enable bootloader, disko will manage our boot and encrypted partitions for us
+  # Enable bootloader, disko manages boot and encrypted partitions
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     supportedFilesystems = [ "btrfs" ];
@@ -33,7 +33,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  # Set locale values
   i18n = {
     defaultLocale = "en_US.UTF-8";
 
@@ -50,13 +49,11 @@
     };
   };
 
-  # Configure networking
   networking = {
     networkmanager.enable = true;
     hostName = "envy";
   };
 
-  # Configure hardware
   hardware = {
     amdgpu.opencl.enable = true;
     graphics.enable = true;
@@ -83,7 +80,6 @@
     ];
   };
 
-  # Configure user account
   users.users.robert = {
     description = "Robert";
     isNormalUser = true;
@@ -113,24 +109,8 @@
 
   # Configure useful services
   services = {
-    flatpak.enable = true;
-    # Disable because we are using auto-cpufreq
     power-profiles-daemon.enable = false;
-
-    auto-cpufreq = {
-      enable = true;
-      settings = {
-        battery = {
-          governor = "ondemand";
-          turbo = "off";
-        };
-
-        charger = {
-          governor = "ondemand";
-          turbo = "auto";
-        };
-      };
-    };
+    flatpak.enable = true;
 
     btrfs.autoScrub = {
       enable = true;
@@ -154,6 +134,10 @@
       enable = true;
       drivers = [ pkgs.hplip ];
     };
+
+    # TODO: Configure TLP & thermald https://wiki.nixos.org/wiki/Laptop
+    thermald.enable = true;
+    tlp = import ./modules/tlp.nix;
   };
 
   # Version of NixOS used for installation
