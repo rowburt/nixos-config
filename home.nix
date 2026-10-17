@@ -27,6 +27,7 @@
       # Desktop apps
       deja-dup
       iotas
+      obs-studio
       onlyoffice-desktopeditors
       prismlauncher
 
