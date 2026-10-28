@@ -34,6 +34,7 @@
       # IDEs
       jetbrains.clion
       jetbrains.idea
+      jetbrains.rider
 
       # Dependencies
       cmake
@@ -42,6 +43,7 @@
       gdb
       gnumake
       gradle
+      # TODO: Try GraalVM
       jdk25
       mono
       python3

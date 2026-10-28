@@ -112,6 +112,7 @@
     power-profiles-daemon.enable = false;
     flatpak.enable = true;
 
+    # TODO: Look into and maybe disable to reduce disk wear
     btrfs.autoScrub = {
       enable = true;
       fileSystems = [ "/" ];
