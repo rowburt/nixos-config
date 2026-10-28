@@ -24,4 +24,4 @@ wipe-and-install:
     sudo mv ./* /mnt/etc/nixos/
 
     # Start NixOS install
-    sudo nixos-install --flake /mnt/etc/nixos/#envy && echo "Install finished, reboot to complete"
+    sudo nixos-install --flake /mnt/etc/nixos/#sakura && echo "Install finished, reboot to complete"

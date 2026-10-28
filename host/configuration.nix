@@ -51,7 +51,7 @@
 
   networking = {
     networkmanager.enable = true;
-    hostName = "envy";
+    hostName = "sakura";
   };
 
   hardware = {
