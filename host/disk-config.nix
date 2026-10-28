@@ -1,10 +1,6 @@
-{ disks ? [ "/dev/nvme0n1" ], inputs, ... }:
+{ disks ? [ "/dev/nvme0n1" ], ... }:
 
 {
-  imports = [
-    inputs.disko.nixosModules.disko
-  ];
-
   disko.devices = {
     disk = {
       main = {

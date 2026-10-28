@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -6,6 +6,7 @@
     ./hardware-configuration.nix
 
     # Include disko disk configuration
+    inputs.disko.nixosModules.disko
     ./disk-config.nix
 
     # Include system modules

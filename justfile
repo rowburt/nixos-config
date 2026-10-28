@@ -20,7 +20,8 @@ wipe-and-install:
     sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko -- --mode zap_create_mount ./host/disk-config.nix || exit
 
     # Generate hardware config and move configs
-    sudo nixos-generate-config --no-filesystems --show-hardware-config --root /mnt > hardware-configuration.nix || exit
+    sudo nixos-generate-config --no-filesystems --show-hardware-config --root /mnt > host/hardware-configuration.nix || exit
+    sudo mkdir -p /mnt/etc/nixos/
     sudo mv ./* /mnt/etc/nixos/
 
     # Start NixOS install
