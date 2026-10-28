@@ -11,9 +11,10 @@
           outputs = [
             {
               criteria = "eDP-1";
-              mode = "1920x1080@60";
+              mode = "2880x1920@120";
               position = "0,0";
-              scale = 1.2;
+              adaptiveSync = true;
+              scale = 1.8;
               status = "enable";
             }
           ];
@@ -30,8 +31,8 @@
             }
             {
               criteria = "LG Electronics 27GL850 911NTQD23220";
-              mode = "2560x1440@144";
-              adaptiveSync = true;
+              mode = "2560x1440@120";
+              # adaptiveSync = true;
               scale = 1.0;
               status = "enable";
             }
