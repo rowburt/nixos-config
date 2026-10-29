@@ -32,7 +32,7 @@
             {
               criteria = "LG Electronics 27GL850 911NTQD23220";
               mode = "2560x1440@120";
-              # adaptiveSync = true;
+              adaptiveSync = true;
               scale = 1.0;
               status = "enable";
             }
