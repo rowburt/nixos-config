@@ -93,8 +93,8 @@
   };
 
   environment = {
-    shells = [ pkgs.zsh ];
     sessionVariables.XDG_CONFIG_HOME = "$HOME/.config";
+    shells = [ pkgs.zsh ];
   };
 
   # Automatically add flathub repo to flatpak
@@ -112,10 +112,9 @@
     power-profiles-daemon.enable = false;
     flatpak.enable = true;
 
-    # TODO: Look into and maybe disable to reduce disk wear
     btrfs.autoScrub = {
       enable = true;
-      fileSystems = [ "/" ];
+      fileSystems = [ "/home" ];
       interval = "weekly";
     };
 
@@ -136,7 +135,6 @@
       drivers = [ pkgs.hplip ];
     };
 
-    # TODO: Configure TLP & thermald https://wiki.nixos.org/wiki/Laptop
     thermald.enable = true;
     tlp = import ./modules/tlp.nix;
   };
