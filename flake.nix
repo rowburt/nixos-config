@@ -48,6 +48,7 @@
         };
 
         modules = [
+          { nixpkgs.config.allowUnfree = true; }
           ./host/configuration.nix
 
           inputs.home-manager.nixosModules.home-manager
